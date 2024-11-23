@@ -14,3 +14,19 @@ if(arr1.length==arr3.length){
 }else{
     console.log(`arr1 is not a subset of arr2`)
 }
+
+// another way 
+arr1=[1,5,3,4,2]
+arr2=[2,4,3,1,7,5,15];
+let isSubset= true
+for(num of arr1){
+    if(!arr2.includes(num)){
+        isSubset= false;
+        break
+    }
+}
+if(isSubset){
+    console.log(`arr1 is subset of arr2`)
+}else{
+    console.log(`arr1 is not a subset of arr2`)
+}
